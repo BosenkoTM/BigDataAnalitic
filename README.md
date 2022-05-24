@@ -36,3 +36,11 @@ Timur Bosenko M. (bosenkotm@mgpu.ru)
 ## Programs and libraries for BigData
 
 - [Books](books/software_big_data.md)
+
+
+## Сводная таблица
+Разделы | 👨‍🏫 Курсы | 📚 Книги | 📊 Данные | 🙋‍♂️ Посты | ✊ Софт
+--- | --- | --- | --- | --- | ---
+
+Big Data | [Курсы по Big Data](courses/courses_big_data.md) | [Книги по Big Data](books/books_big_data.md) | + | [Источники, посвященные Big Data](social/social_data_science.md) | [Программы и библиотеки для работы с большими данными](software/software_big_data.md)
+
