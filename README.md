@@ -6,7 +6,7 @@ Timur Bosenko M. (bosenkotm@mgpu.ru)
 
 - [Introduction to Big Data](/lectures/1-BigData_Intro.pdf)
 - File Systems:
-    - [Hadoop Distributed File System (HDFS)](BigData_HDFS.pdf)
+    - [Hadoop Distributed File System (HDFS)](/lectures/2-BigData_HDFS.pdf)
 - Cluster Managers:
     - [Yet Another Resource Negotiator (YARN)](BigData_YARN.pdf)
 - Batch processing:
