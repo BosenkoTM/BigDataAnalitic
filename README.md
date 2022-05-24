@@ -23,7 +23,6 @@ Timur Bosenko M. (bosenkotm@mgpu.ru)
     - [Spark GraphX](BigData_GraphX.pdf)
 - Containers:
     - [Introduction to Docker](BigData_Docker.pdf)
-    - [Spark on Kubernetes](BigData_Spark_K8s.pdf)
 
 ## self-study
 
