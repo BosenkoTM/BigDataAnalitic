@@ -1,4 +1,4 @@
-# Lectures
+# Lecturer
 Timur Bosenko M. (bosenkotm@mgpu.ru)
 
 ## Big Data Analytics: Approaches and Tools
