@@ -3,7 +3,6 @@ Timur Bosenko M. (bosenkotm@mgpu.ru)
 
 ## Big Data Analytics: Approaches and Tools
 
-
 - [Introduction to Big Data](lectures/1-BigData_Intro.pdf)
 - File Systems:
     - [Hadoop Distributed File System (HDFS)](lectures/2-BigData_HDFS.pdf)
@@ -26,6 +25,8 @@ Timur Bosenko M. (bosenkotm@mgpu.ru)
     - [Introduction to Docker](BigData_Docker.pdf)
     - [Spark on Kubernetes](BigData_Spark_K8s.pdf)
 
+## self-study
+
 ## Additional topics
 
 - Linux and Python:
@@ -33,4 +34,6 @@ Timur Bosenko M. (bosenkotm@mgpu.ru)
     - [Virtual File System](common/SysProg_VFS.pdf)
     - [Network Protocols](common/SysProg_NetworkProtocols.pdf)
 
-## [Программы и библиотеки для BigData](books/software_big_data.md)
+## [Программы и библиотеки для BigData]
+
+- [Books](books/software_big_data.md)
