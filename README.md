@@ -28,16 +28,9 @@ Timur Bosenko M. (bosenkotm@mgpu.ru)
 
 ## Additional topics
 
-- Spark Machine Learning:
-    - [Stochastic Gradient Descent](Spark_MLlib_Distributed_SGD.pdf)
-    - [Naive Bayes Classifier](Spark_MLlib_NaiveBayes.pdf)
-    - [Recommendation Systems using ALS](BigData_ML_RecomSystems.pdf)
-
 - Linux and Python:
     - [Introduction to Linux Kernel](common/SysProg_Intro.pdf)
-    - [Completely Fair Scheduler](common/SysProg_CFS.pdf)
     - [Virtual File System](common/SysProg_VFS.pdf)
     - [Network Protocols](common/SysProg_NetworkProtocols.pdf)
-    - [CPython](common/SysProg_CPython.pdf)
 
 ## [Программы и библиотеки для BigData](books/software_big_data.md)
