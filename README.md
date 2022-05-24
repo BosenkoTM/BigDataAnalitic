@@ -8,7 +8,7 @@ Timur Bosenko M. (bosenkotm@mgpu.ru)
 - File Systems:
     - [Hadoop Distributed File System (HDFS)](lectures/2-BigData_HDFS.pdf)
 - Cluster Managers:
-    - [Yet Another Resource Negotiator (YARN)](BigData_YARN.pdf)
+    - [Yet Another Resource Negotiator (YARN)](lectures/3-BigData_YARN.pdf)
 - Batch processing:
     - [MapReduce Framework](BigData_MapReduce.pdf)
     - [Introduction to Spark](BigData_Spark.pdf)
