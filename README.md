@@ -34,6 +34,6 @@ Timur Bosenko M. (bosenkotm@mgpu.ru)
     - [Virtual File System](common/SysProg_VFS.pdf)
     - [Network Protocols](common/SysProg_NetworkProtocols.pdf)
 
-## Программы и библиотеки для BigData
+## Programs and libraries for BigData
 
 - [Books](books/software_big_data.md)
