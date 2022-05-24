@@ -4,9 +4,9 @@ Timur Bosenko M. (bosenkotm@mgpu.ru)
 ## Big Data Analytics: Approaches and Tools
 
 
-- [Introduction to Big Data](/lectures/1-BigData_Intro.pdf)
+- [Introduction to Big Data](lectures/1-BigData_Intro.pdf)
 - File Systems:
-    - [Hadoop Distributed File System (HDFS)](/lectures/2-BigData_HDFS.pdf)
+    - [Hadoop Distributed File System (HDFS)](lectures/2-BigData_HDFS.pdf)
 - Cluster Managers:
     - [Yet Another Resource Negotiator (YARN)](BigData_YARN.pdf)
 - Batch processing:
@@ -39,3 +39,5 @@ Timur Bosenko M. (bosenkotm@mgpu.ru)
     - [Virtual File System](common/SysProg_VFS.pdf)
     - [Network Protocols](common/SysProg_NetworkProtocols.pdf)
     - [CPython](common/SysProg_CPython.pdf)
+
+# [Программы и библиотеки для BigData](books/software_big_data.md)
