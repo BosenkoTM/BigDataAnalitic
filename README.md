@@ -4,7 +4,7 @@ Timur Bosenko M. (bosenkotm@mgpu.ru)
 ## Big Data Analytics: Approaches and Tools
 
 
-- [Introduction to Big Data](lectures/BigData_Intro.pdf)
+- [Introduction to Big Data](/lectures/1-BigData_Intro.pdf)
 - File Systems:
     - [Hadoop Distributed File System (HDFS)](BigData_HDFS.pdf)
 - Cluster Managers:
