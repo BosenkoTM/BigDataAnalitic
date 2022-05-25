@@ -11,6 +11,9 @@
 - [Vertica](https://www.vertica.com/) – аналитическая колоночная СУБД, которая эффективно сжимает, хранит, быстро отдает данные ([конспект](https://habr.com/ru/company/sberbank/blog/414895/))
 - [InfluxDB](https://www.influxdata.com/) –  программное обеспечение с открытым исходным кодом для хранения временных рядов ([конспект](https://tproger.ru/translations/influxdb-guide/))
 - [h5py](https://www.h5py.org/) – Python-интерфейс для двоичного формата данных HDF5.
+
+# Книги по Big Data
+
 - Wolohan J. T. Mastering Large Datasets with Python_ Parallelize and Distribute Your Python Code-Manning. Manning, 2020.
 - Су К., Ын А. Теоретический минимум по Big Data. Всё что нужно знать о больших данных. Питер, 2019.
 - Ульман Д. Д., Раджараман А., Лесковец Ю. Анализ больших наборов данных. ДМК Пресс, 2016.
