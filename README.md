@@ -26,6 +26,8 @@ Timur Bosenko M. (bosenkotm@mgpu.ru)
 
 ## self-study
 
+- `Семинар 1`. [Основные команды в Ubuntu](https://github.com/BosenkoTM/BigDataAnalitic_Practice/blob/main/common/docs/basic_shell_commands.md)
+
 ## Additional topics
 
 - Linux and Python:
