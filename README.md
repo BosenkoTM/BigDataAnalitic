@@ -32,6 +32,8 @@ Timur Bosenko M. (bosenkotm@mgpu.ru)
 - `lecture 07` Graphs:
     - [Apache Giraph](BigData_Giraph.pdf)
     - [Spark GraphX](BigData_GraphX.pdf)
+- Practice:
+    - [Introduction to Graph Analysis with Spark GraphFrames]()
 - `lecture 08` Containers:
     - [Introduction to Docker](BigData_Docker.pdf)
 - Practice:
