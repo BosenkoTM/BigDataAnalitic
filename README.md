@@ -4,12 +4,15 @@ Timur Bosenko M. (bosenkotm@mgpu.ru)
 ## Big Data Analytics: Approaches and Tools
 
 - `lecture 01` [Introduction to Big Data](lectures/1-BigData_Intro.pdf)
+-
 - `lecture 02` File Systems:
     - [Hadoop Distributed File System (HDFS)](-lectures/2-BigData_HDFS.pdf)
 -  Practice: [Introduction to HDFS]()
+
 - `lecture 03` Cluster Managers:
     - [Yet Another Resource Negotiator (YARN)](-lectures/3-BigData_YARN.pdf)
 -  Practice: [Introduction to YARN]()
+
 - `lecture 04` Batch processing:
     - [MapReduce Framework](-lectures/4-BigData_MapReduce.pdf)
     - [Introduction to Spark](BigData_Spark.pdf)
@@ -18,8 +21,10 @@ Timur Bosenko M. (bosenkotm@mgpu.ru)
     - [Introduction to MapReduce]()
     - [MapReduce and Python]()
     - [Calculating average ratings and using custom counters]()
+   
 - `lecture 05` Coordination:
     - [Introduction to Zookeeper](BigData_Zookeeper.pdf)
+   
 - `lecture 06` Streaming:
     - [Apache Storm](BigData_Storm.pdf)
     - [Spark Streaming](BigData_Spark_Streaming.pdf)
@@ -29,11 +34,13 @@ Timur Bosenko M. (bosenkotm@mgpu.ru)
     - [Introduction to PySpark DataFrame API]()
     - `Kafka`:
     - [Introduction to Kafka distributed message broker](): How to Set Up Kafka
+    
 - `lecture 07` Graphs:
     - [Apache Giraph](BigData_Giraph.pdf)
     - [Spark GraphX](BigData_GraphX.pdf)
 - Practice:
     - [Introduction to Graph Analysis with Spark GraphFrames]()
+    
 - `lecture 08` Containers:
     - [Introduction to Docker](BigData_Docker.pdf)
 - Practice:
