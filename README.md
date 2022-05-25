@@ -3,7 +3,8 @@ Timur Bosenko M. (bosenkotm@mgpu.ru)
 
 ## Big Data Analytics: Approaches and Tools
 
-- `lecture 01` [Introduction to Big Data](lectures/1-BigData_Intro.pdf)
+- `lecture 01` Intro:
+    -  [Introduction to Big Data](lectures/1-BigData_Intro.pdf)
 
 - `lecture 02` File Systems:
     - [Hadoop Distributed File System (HDFS)](-lectures/2-BigData_HDFS.pdf)
