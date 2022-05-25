@@ -6,12 +6,18 @@ Timur Bosenko M. (bosenkotm@mgpu.ru)
 - `lecture 01` [Introduction to Big Data](lectures/1-BigData_Intro.pdf)
 - `lecture 02` File Systems:
     - [Hadoop Distributed File System (HDFS)](-lectures/2-BigData_HDFS.pdf)
+-  Practice: [Introduction to HDFS]()
 - `lecture 03` Cluster Managers:
     - [Yet Another Resource Negotiator (YARN)](-lectures/3-BigData_YARN.pdf)
+-  Practice: [Introduction to YARN]()
 - `lecture 04` Batch processing:
     - [MapReduce Framework](-lectures/4-BigData_MapReduce.pdf)
     - [Introduction to Spark](BigData_Spark.pdf)
     - [User-Defined Functions (UDF) in PySpark](BigData_PySpark_UDF.pdf)
+- Practice:
+    - [Introduction to MapReduce]()
+    - [MapReduce and Python]()
+    - [Calculating average ratings and using custom counters](docs/mapreduce_average_counters.md)
 - `lecture 05` Coordination:
     - [Introduction to Zookeeper](BigData_Zookeeper.pdf)
 - `lecture 06` Streaming:
@@ -23,6 +29,9 @@ Timur Bosenko M. (bosenkotm@mgpu.ru)
     - [Spark GraphX](BigData_GraphX.pdf)
 - `lecture 08` Containers:
     - [Introduction to Docker](BigData_Docker.pdf)
+- Practice:
+    - [Part 1: Introduction]()
+    - [Part 2: Building Base Hadoop Image]()
 
 ## self-study
 
