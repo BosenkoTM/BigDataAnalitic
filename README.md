@@ -32,7 +32,7 @@ Timur Bosenko M. (bosenkotm@mgpu.ru)
 
 [ССЫЛКА ДЛЯ ВХОДА](https://docs.google.com/forms/d/e/1FAIpQLSdD_Hl-WwPK69VGKKf0tw1vF3AgMKYQRR3w9RofcIFKlJM4YA/viewform?usp=sf_link)
 
-## ТЕСТ 2. Зачетное тестирование. 29.06.2022 18.00 - 19.30
+## ТЕСТ 2. Зачетное тестирование. Дата проведения  29.06.2022 18.00 - 19.30
 [ССЫЛКА ДЛЯ ВХОДА](https://docs.google.com/forms/d/e/1FAIpQLSdxADzRpGOzLrVBPHwUQMt6sWIPO63nLwYt0KolAWKq3-xREQ/viewform?usp=sf_link)
 
 ## Additional topics
