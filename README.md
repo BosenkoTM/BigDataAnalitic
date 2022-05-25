@@ -9,7 +9,7 @@ Timur Bosenko M. (bosenkotm@mgpu.ru)
 - Cluster Managers:
     - [Yet Another Resource Negotiator (YARN)](lectures/3-BigData_YARN.pdf)
 - Batch processing:
-    - [MapReduce Framework](BigData_MapReduce.pdf)
+    - [MapReduce Framework](lectures/4-BigData_MapReduce.pdf)
     - [Introduction to Spark](BigData_Spark.pdf)
     - [User-Defined Functions (UDF) in PySpark](BigData_PySpark_UDF.pdf)
 - Coordination:
