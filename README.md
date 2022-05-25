@@ -7,11 +7,13 @@ Timur Bosenko M. (bosenkotm@mgpu.ru)
 
 - `lecture 02` File Systems:
     - [Hadoop Distributed File System (HDFS)](-lectures/2-BigData_HDFS.pdf)
--  Practice: [Introduction to HDFS]()
+-  Practice: 
+    -  [Introduction to HDFS]()
 
 - `lecture 03` Cluster Managers:
     - [Yet Another Resource Negotiator (YARN)](-lectures/3-BigData_YARN.pdf)
--  Practice: [Introduction to YARN]()
+-  Practice: 
+    -  [Introduction to YARN]()
 
 - `lecture 04` Batch processing:
     - [MapReduce Framework](-lectures/4-BigData_MapReduce.pdf)
