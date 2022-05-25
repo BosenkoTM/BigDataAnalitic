@@ -3,26 +3,26 @@ Timur Bosenko M. (bosenkotm@mgpu.ru)
 
 ## Big Data Analytics: Approaches and Tools
 
-- [Introduction to Big Data](lectures/1-BigData_Intro.pdf)
+- `lecture 01` [Introduction to Big Data](lectures/1-BigData_Intro.pdf)
 - File Systems:
-    - [Hadoop Distributed File System (HDFS)](lectures/2-BigData_HDFS.pdf)
+    - `lecture 02` [Hadoop Distributed File System (HDFS)](lectures/2-BigData_HDFS.pdf)
 - Cluster Managers:
-    - [Yet Another Resource Negotiator (YARN)](lectures/3-BigData_YARN.pdf)
+    - `lecture 03` [Yet Another Resource Negotiator (YARN)](lectures/3-BigData_YARN.pdf)
 - Batch processing:
-    - [MapReduce Framework](lectures/4-BigData_MapReduce.pdf)
-    - [Introduction to Spark](BigData_Spark.pdf)
-    - [User-Defined Functions (UDF) in PySpark](BigData_PySpark_UDF.pdf)
+    - `lecture 04` [MapReduce Framework](lectures/4-BigData_MapReduce.pdf)
+    - `lecture 05` [Introduction to Spark](BigData_Spark.pdf)
+    - `lecture 06` [User-Defined Functions (UDF) in PySpark](BigData_PySpark_UDF.pdf)
 - Coordination:
-    - [Introduction to Zookeeper](BigData_Zookeeper.pdf)
+    - `lecture 07` [Introduction to Zookeeper](BigData_Zookeeper.pdf)
 - Streaming:
-    - [Apache Storm](BigData_Storm.pdf)
-    - [Spark Streaming](BigData_Spark_Streaming.pdf)
-    - [Spark Structured Streaming](BigData_Spark_Streaming_Structured.pdf)
+    - `lecture 08` [Apache Storm](BigData_Storm.pdf)
+    - `lecture 09` [Spark Streaming](BigData_Spark_Streaming.pdf)
+    - `lecture 03` [Spark Structured Streaming](BigData_Spark_Streaming_Structured.pdf)
 - Graphs:
-    - [Apache Giraph](BigData_Giraph.pdf)
-    - [Spark GraphX](BigData_GraphX.pdf)
+    - `lecture 10` [Apache Giraph](BigData_Giraph.pdf)
+    - `lecture 11` [Spark GraphX](BigData_GraphX.pdf)
 - Containers:
-    - [Introduction to Docker](BigData_Docker.pdf)
+    - `lecture 12` [Introduction to Docker](BigData_Docker.pdf)
 
 ## self-study
 
