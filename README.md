@@ -23,7 +23,7 @@ Timur Bosenko M. (bosenkotm@mgpu.ru)
 - `lecture 06` Streaming:
     - [Apache Storm](BigData_Storm.pdf)
     - [Spark Streaming](BigData_Spark_Streaming.pdf)
-    - [Spark Structured Streaming](BigData_Spark_Streaming_Structured.pdf
+    - [Spark Structured Streaming]()
 - Practice:
     - [Introduction to PySpark RDD API]()
     - [Introduction to PySpark DataFrame API]()
