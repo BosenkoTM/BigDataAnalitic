@@ -17,13 +17,18 @@ Timur Bosenko M. (bosenkotm@mgpu.ru)
 - Practice:
     - [Introduction to MapReduce]()
     - [MapReduce and Python]()
-    - [Calculating average ratings and using custom counters](docs/mapreduce_average_counters.md)
+    - [Calculating average ratings and using custom counters]()
 - `lecture 05` Coordination:
     - [Introduction to Zookeeper](BigData_Zookeeper.pdf)
 - `lecture 06` Streaming:
     - [Apache Storm](BigData_Storm.pdf)
     - [Spark Streaming](BigData_Spark_Streaming.pdf)
-    - [Spark Structured Streaming](BigData_Spark_Streaming_Structured.pdf)
+    - [Spark Structured Streaming](BigData_Spark_Streaming_Structured.pdf
+- Practice:
+    - [Introduction to PySpark RDD API]()
+    - [Introduction to PySpark DataFrame API]()
+    - `Kafka`:
+    - [Introduction to Kafka distributed message broker](): How to Set Up Kafka
 - `lecture 07` Graphs:
     - [Apache Giraph](BigData_Giraph.pdf)
     - [Spark GraphX](BigData_GraphX.pdf)
