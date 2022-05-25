@@ -33,7 +33,7 @@ Timur Bosenko M. (bosenkotm@mgpu.ru)
     - [Virtual File System](common/SysProg_VFS.pdf)
     - [Network Protocols](common/SysProg_NetworkProtocols.pdf)
 
-## Сводная таблица
+## Summary table of literature sources
 Разделы | 👨‍🏫 Курсы | 📚 Книги | 📊 Данные | 🙋‍♂️ Посты | ✊ Софт
 --- | --- | --- | --- | --- | ---
 Big Data | [Курсы по Big Data](courses/courses_big_data.md) | [Книги по Big Data](books/software_big_data.md) | + | [Источники, посвященные Big Data](social/social_data_science.md) | [Программы и библиотеки для работы с большими данными](software/software_big_data.md)
