@@ -7,17 +7,17 @@ Timur Bosenko M. (bosenkotm@mgpu.ru)
     -  [Introduction to Big Data](lectures/1-BigData_Intro.pdf)
 
 - `lecture 02` File Systems:
-    - [Hadoop Distributed File System (HDFS)](-lectures/2-BigData_HDFS.pdf)
+    - [Hadoop Distributed File System (HDFS)](lectures/2-BigData_HDFS.pdf)
 -  Practice: 
     -  [Introduction to HDFS]()
 
 - `lecture 03` Cluster Managers:
-    - [Yet Another Resource Negotiator (YARN)](-lectures/3-BigData_YARN.pdf)
+    - [Yet Another Resource Negotiator (YARN)](lectures/3-BigData_YARN.pdf)
 -  Practice: 
     -  [Introduction to YARN]()
 
 - `lecture 04` Batch processing:
-    - [MapReduce Framework](-lectures/4-BigData_MapReduce.pdf)
+    - [MapReduce Framework](lectures/4-BigData_MapReduce.pdf)
     - [Introduction to Spark](BigData_Spark.pdf)
     - [User-Defined Functions (UDF) in PySpark](BigData_PySpark_UDF.pdf)
 - Practice:
