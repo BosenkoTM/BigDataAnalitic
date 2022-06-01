@@ -9,13 +9,14 @@ Timur Bosenko M. (bosenkotm@mgpu.ru)
 - `lecture 02` File Systems:
     - [Hadoop Distributed File System (HDFS)](lectures/2-BigData_HDFS.pdf)
 -  Practice: 
-    -  [Introduction to HDFS](https://github.com/BosenkoTM/BigDataAnalitic_Practice/tree/main/exercises/winter_semester_2021-2022/01_hadoop)
-    -  `Решение` задания [Introduction to HDFS](https://github.com/BosenkoTM/BigDataAnalitic_Practice/blob/main/solutions/winter_semester_2021-2022/01_hadoop/Exercise_1.pdf)
+    -  [Introduction to HDFS](https://github.com/BosenkoTM/BigDataAnalitic_Practice/tree/main/exercises/winter_semester_2021-2022/01_hadoop).
+    -  `Решение` задания [Introduction to HDFS](https://github.com/BosenkoTM/BigDataAnalitic_Practice/blob/main/solutions/winter_semester_2021-2022/01_hadoop/Exercise_1.pdf).
 
 - `lecture 03` Cluster Managers:
     - [Yet Another Resource Negotiator (YARN)](lectures/3-BigData_YARN.pdf)
 -  Practice: 
-    -  [Introduction to YARN]()
+    -  [Introduction to YARN + Hive](https://github.com/BosenkoTM/BigDataAnalitic_Practice/tree/main/exercises/winter_semester_2021-2022/02_hive).
+    -  `Решение` задания [Introduction to YARN + Hive](https://github.com/BosenkoTM/BigDataAnalitic_Practice/blob/main/solutions/winter_semester_2021-2022/02_hive/Exercise_2.pdf).
 
 - `lecture 04` Batch processing:
     - [MapReduce Framework](lectures/4-BigData_MapReduce.pdf)
