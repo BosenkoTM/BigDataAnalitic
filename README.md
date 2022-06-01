@@ -17,16 +17,14 @@ Timur Bosenko M. (bosenkotm@mgpu.ru)
 -  Practice: 
     -  [Introduction to YARN + Hive](https://github.com/BosenkoTM/BigDataAnalitic_Practice/tree/main/exercises/winter_semester_2021-2022/02_hive).
     -  `Решение` задания [Introduction to YARN + Hive](https://github.com/BosenkoTM/BigDataAnalitic_Practice/blob/main/solutions/winter_semester_2021-2022/02_hive/Exercise_2.pdf).
+    -  [Introduction to HiveQL](https://github.com/BosenkoTM/BigDataAnalitic_Practice/tree/main/exercises/winter_semester_2021-2022/03_hive-ql_partitioning_hive-server).
+    -  `Решение` задания [Introduction to HiveQL](https://github.com/BosenkoTM/BigDataAnalitic_Practice/tree/main/solutions/winter_semester_2021-2022/03_hive-ql_partitioning_hive-server).
 
 - `lecture 04` Batch processing:
     - [MapReduce Framework](lectures/4-BigData_MapReduce.pdf)
     - [Introduction to Spark](BigData_Spark.pdf)
     - [User-Defined Functions (UDF) in PySpark](BigData_PySpark_UDF.pdf)
-- Practice:
-    - [Introduction to MapReduce]()
-    - [MapReduce and Python]()
-    - [Calculating average ratings and using custom counters]()
-   
+ 
 - `lecture 05` Coordination:
     - [Introduction to Zookeeper](BigData_Zookeeper.pdf)
    
@@ -35,22 +33,14 @@ Timur Bosenko M. (bosenkotm@mgpu.ru)
     - [Spark Streaming](BigData_Spark_Streaming.pdf)
     - [Spark Structured Streaming]()
 - Practice:
-    - [Introduction to PySpark RDD API]()
-    - [Introduction to PySpark DataFrame API]()
-    - `Kafka`:
-    - [Introduction to Kafka distributed message broker](): How to Set Up Kafka
-    
+    - [Introduction to Spark_PySpark](https://github.com/BosenkoTM/BigDataAnalitic_Practice/tree/main/exercises/winter_semester_2021-2022/04_spark_pyspark_jupyter)
+    -  `Решение` задания [Introduction to Spark_PySpark](https://github.com/BosenkoTM/BigDataAnalitic_Practice/tree/main/solutions/winter_semester_2021-2022/04_spark_pyspark_jupyter).
 - `lecture 07` Graphs:
     - [Apache Giraph](BigData_Giraph.pdf)
     - [Spark GraphX](BigData_GraphX.pdf)
-- Practice:
-    - [Introduction to Graph Analysis with Spark GraphFrames]()
     
 - `lecture 08` Containers:
     - [Introduction to Docker](BigData_Docker.pdf)
-- Practice:
-    - [Part 1: Introduction]()
-    - [Part 2: Building Base Hadoop Image]()
 
 ## self-study
 
