@@ -9,7 +9,8 @@ Timur Bosenko M. (bosenkotm@mgpu.ru)
 - `lecture 02` File Systems:
     - [Hadoop Distributed File System (HDFS)](lectures/2-BigData_HDFS.pdf)
 -  Practice: 
-    -  [Introduction to HDFS]()
+    -  [Introduction to HDFS](https://github.com/BosenkoTM/BigDataAnalitic_Practice/tree/main/exercises/winter_semester_2021-2022/01_hadoop)
+    -  `Решение` задания [Introduction to HDFS](https://github.com/BosenkoTM/BigDataAnalitic_Practice/blob/main/solutions/winter_semester_2021-2022/01_hadoop/Exercise_1.pdf)
 
 - `lecture 03` Cluster Managers:
     - [Yet Another Resource Negotiator (YARN)](lectures/3-BigData_YARN.pdf)
@@ -60,6 +61,10 @@ Timur Bosenko M. (bosenkotm@mgpu.ru)
 
 ## ТЕСТ 2. Зачетное тестирование. Дата проведения  29.06.2022 18.00 - 19.30
 [ССЫЛКА ДЛЯ ВХОДА](https://docs.google.com/forms/d/e/1FAIpQLSdxADzRpGOzLrVBPHwUQMt6sWIPO63nLwYt0KolAWKq3-xREQ/viewform?usp=sf_link)
+
+##  ЗАЧЕТНОЕ ЗАДАНИЕ
+
+
 
 ## Additional topics
 
