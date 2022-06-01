@@ -42,6 +42,19 @@ Timur Bosenko M. (bosenkotm@mgpu.ru)
 - `lecture 08` Containers:
     - [Introduction to Docker](BigData_Docker.pdf)
 
+## Теоретические вопросы
+
+1.	Основные парадигмы теории Больших данных. Правило Мура. Правила Амдала. Виды распределенных систем в контексте больших данных.
+2.	Распределенная файловая система Hadoop (`HDFS`).
+3.	Менеджеры кластера: (`YARN`).
+4.	Инструменты работы с большими данными `Hive` и  `HiveQL`.
+5.	Инструменты работы с большими данными при пакетной обработке данных: Фреймворк `MapReduce`. 
+6.	Инструменты работы с большими данными `Spark` и `PySpark`.
+7.	Координатор: основные подходы при работе в `Zookeeper`.
+8.	Инструменты работы с большими данными при потоковой передаче данных: `Apache Storm`, `Spark Streaming`, `Spark Structured Streaming`.
+9.	Инструменты работы с большими данными на Графах: `Apache Giraph`, `Spark GraphX`.
+10.	Контейнеры: основные подходы при работе  в `Docker`.
+
 ## self-study
 
 - `Семинар 1`. [Основные команды в Ubuntu](https://github.com/BosenkoTM/BigDataAnalitic_Practice/blob/main/common/docs/basic_shell_commands.md)
