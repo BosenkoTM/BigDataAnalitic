@@ -1,6 +1,10 @@
 # Lecturer
 Timur Bosenko M. (bosenkotm@mgpu.ru)
 
+## Текущая успеваемость
+
+ [ЦТ-201мз, АБД 2022](https://docs.google.com/spreadsheets/d/1ndnkqm8tmnvmygQrt_wuMUwJiVAsIgEqtLOMsLNlZMM/edit?usp=sharing)
+
 ## Big Data Analytics: Approaches and Tools
 
 - `lecture 01` Intro:
