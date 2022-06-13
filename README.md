@@ -32,8 +32,8 @@ Timur Bosenko M. (bosenkotm@mgpu.ru)
 
 - `lecture 04` Batch processing:
     - [MapReduce Framework](lectures/4-BigData_MapReduce.pdf)
-    - [Introduction to Spark](BigData_Spark.pdf)
-    - [User-Defined Functions (UDF) in PySpark](BigData_PySpark_UDF.pdf)
+    - [Introduction to Spark](lectures/5-BigData_Spark.pdf)
+    - [User-Defined Functions (UDF) in PySpark](lectures/6-BigData_PySpark_UDF.pdf)
  
 - `lecture 05` Coordination:
     - [Introduction to Zookeeper](BigData_Zookeeper.pdf)
