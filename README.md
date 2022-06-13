@@ -12,6 +12,15 @@ Timur Bosenko M. (bosenkotm@mgpu.ru)
  - OC **`Ubuntu 20.04`** на базе кластера **`МГПУ`**. Номер РМ студента получить у ведущего лектора. Для работы потребуется клиент [anydesk](  https://anydesk.com/en/downloads/windows).
  - Инструкции и команды работы в [Docker containers](https://github.com/BosenkoTM/BigDataAnalitic_Practice/tree/main/docker22).
 
+ `ВИРТУАЛЬНАЯ ГОСТЕВАЯ ОС`:
+ 
+ - `D_System_22` [vm - VirtualBox](https://disk.yandex.ru/d/RTZvbDhtfXInMg), в его комплект входит:
+    - `VirtualBox-6.1.30-148432-Win.exe` - ПО для разворачивания виртуальной ОС; 
+    - `St_work_1.ova` - образ настроенной ОС `Ubuntu 18.04`;
+    - `St_work_Hadoop.ova` - образ настроенной ОС `Ubuntu 18.04 + Hadoop`;
+    - `login.txt`;
+    - `ubuntu-18.04.6-desktop-amd64.iso` - исходный образ ОС.
+
 ## Текущая успеваемость
 
  [ЦТ-201мз, АБД 2022](https://docs.google.com/spreadsheets/d/1ndnkqm8tmnvmygQrt_wuMUwJiVAsIgEqtLOMsLNlZMM/edit?usp=sharing)
