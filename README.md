@@ -10,7 +10,7 @@ Timur Bosenko M. (bosenkotm@mgpu.ru)
 ## Программное обеспечение 
 
  - OC **`Ubuntu 20.04`** на базе кластера **`МГПУ`**. Номер РМ студента получить у ведущего лектора.
- - Инструкции и команды работы в [Docker conteiners](https://github.com/BosenkoTM/BigDataAnalitic_Practice/tree/main/docker22).
+ - Инструкции и команды работы в [Docker containers](https://github.com/BosenkoTM/BigDataAnalitic_Practice/tree/main/docker22).
 
 ## Текущая успеваемость
 
