@@ -82,6 +82,7 @@ Timur Bosenko M. (bosenkotm@mgpu.ru)
 ## self-study
 
 - `Семинар 1`. [Основные команды в Ubuntu](https://github.com/BosenkoTM/BigDataAnalitic_Practice/blob/main/common/docs/basic_shell_commands.md)
+- [Альтернативное практическое изучение инструментов **Big Data**](https://github.com/BosenkoTM/BigDataAnalitic_Practice#practice)
 
 ## ТЕСТ 1. Apache Spark.  Дата проведения 25.06.2022, 13.00 - 14.30
 
