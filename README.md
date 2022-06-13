@@ -46,11 +46,11 @@ Timur Bosenko M. (bosenkotm@mgpu.ru)
     - [Introduction to Spark_PySpark](https://github.com/BosenkoTM/BigDataAnalitic_Practice/tree/main/exercises/winter_semester_2021-2022/04_spark_pyspark_jupyter)
     -  `Решение` задания [Introduction to Spark_PySpark](https://github.com/BosenkoTM/BigDataAnalitic_Practice/tree/main/solutions/winter_semester_2021-2022/04_spark_pyspark_jupyter).
 - `lecture 07` Graphs:
-    - [Apache Giraph](BigData_Giraph.pdf)
-    - [Spark GraphX](BigData_GraphX.pdf)
+    - [Apache Giraph](lectures/11-1-BigData_Giraph.pdf)
+    - [Spark GraphX](lectures/11-2-BigData_GraphX.pdf)
     
 - `lecture 08` Containers:
-    - [Introduction to Docker](BigData_Docker.pdf)
+    - [Introduction to Docker](lectures/12-BigData_Docker.pdf)
 
 ## Теоретические вопросы
 
