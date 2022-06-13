@@ -7,6 +7,11 @@ Timur Bosenko M. (bosenkotm@mgpu.ru)
 
 В конце каждого урока будут практические упражнения, которые мы начнем вместе и которые должны быть завершены к следующей встрече. Так что будьте внимательны, и если Вы не успеваете, не стесняйтесь задавать вопросы в конце каждого урока.
 
+## Программное обеспечение 
+
+ - OC **`Ubuntu 20.04`** на базе кластера **`МГПУ`**. Номер РМ студента получить у ведущего лектора.
+ - Инструкции и команды работы в [Docker conteiners](https://github.com/BosenkoTM/BigDataAnalitic_Practice/tree/main/docker22).
+
 ## Текущая успеваемость
 
  [ЦТ-201мз, АБД 2022](https://docs.google.com/spreadsheets/d/1ndnkqm8tmnvmygQrt_wuMUwJiVAsIgEqtLOMsLNlZMM/edit?usp=sharing)
@@ -96,6 +101,7 @@ Timur Bosenko M. (bosenkotm@mgpu.ru)
 
 
 ## Additional topics
+
 
 - Linux and Python:
     - [Introduction to Linux Kernel](common/SysProg_Intro.pdf)
