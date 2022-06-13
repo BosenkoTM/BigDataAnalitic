@@ -36,12 +36,12 @@ Timur Bosenko M. (bosenkotm@mgpu.ru)
     - [User-Defined Functions (UDF) in PySpark](lectures/6-BigData_PySpark_UDF.pdf)
  
 - `lecture 05` Coordination:
-    - [Introduction to Zookeeper](BigData_Zookeeper.pdf)
+    - [Introduction to Zookeeper](lectures/7-BigData_Zookeeper.pdf)
    
 - `lecture 06` Streaming:
-    - [Apache Storm](BigData_Storm.pdf)
-    - [Spark Streaming](BigData_Spark_Streaming.pdf)
-    - [Spark Structured Streaming]()
+    - [Apache Storm](lectures/8-BigData_Storm.pdf)
+    - [Spark Streaming](lectures/9-BigData_Spark_Streaming.pdf)
+    - [Spark Structured Streaming](lectures/10-BigData_Spark_Streaming_Structured.pdf)
 - Practice:
     - [Introduction to Spark_PySpark](https://github.com/BosenkoTM/BigDataAnalitic_Practice/tree/main/exercises/winter_semester_2021-2022/04_spark_pyspark_jupyter)
     -  `Решение` задания [Introduction to Spark_PySpark](https://github.com/BosenkoTM/BigDataAnalitic_Practice/tree/main/solutions/winter_semester_2021-2022/04_spark_pyspark_jupyter).
