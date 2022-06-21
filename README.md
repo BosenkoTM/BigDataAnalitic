@@ -42,8 +42,8 @@ Timur Bosenko M. (bosenkotm@mgpu.ru)
 -  Practice: 
     -  [Introduction to YARN + Hive](https://github.com/BosenkoTM/BigDataAnalitic_Practice/tree/main/exercises/winter_semester_2021-2022/02_hive).
     -  `Решение` задания [Introduction to YARN + Hive](https://github.com/BosenkoTM/BigDataAnalitic_Practice/blob/main/solutions/winter_semester_2021-2022/02_hive/Exercise_2.pdf).
-    -  [Introduction to HiveQL](https://github.com/BosenkoTM/BigDataAnalitic_Practice/tree/main/exercises/winter_semester_2021-2022/03_hive-ql_partitioning_hive-server).
-    -  `Решение` задания [Introduction to HiveQL](https://github.com/BosenkoTM/BigDataAnalitic_Practice/tree/main/solutions/winter_semester_2021-2022/03_hive-ql_partitioning_hive-server).
+    -  НЕ ВЫПОЛНЯТЬ !!! [Introduction to HiveQL](https://github.com/BosenkoTM/BigDataAnalitic_Practice/tree/main/exercises/winter_semester_2021-2022/03_hive-ql_partitioning_hive-server).
+    -  НЕ ВЫПОЛНЯТЬ !!! `Решение` задания [Introduction to HiveQL](https://github.com/BosenkoTM/BigDataAnalitic_Practice/tree/main/solutions/winter_semester_2021-2022/03_hive-ql_partitioning_hive-server).
 
 - `lecture 04` Batch processing:
     - [MapReduce Framework](lectures/4-BigData_MapReduce.pdf)
