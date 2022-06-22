@@ -38,11 +38,12 @@ Timur Bosenko M. (bosenkotm@mgpu.ru)
 
 - `lecture 03` Cluster Managers:
     - [Yet Another Resource Negotiator (YARN)](lectures/3-BigData_YARN.pdf).
-    - [Hive-HiveQL](lectures/3-1-Hive-HiveQL.pdf).
+    - [Hive](lectures/3-1-Hive-HiveQL.pdf).
+    - [HiveQL with practice](lectures/3-2-Hive-HiveQL.pdf).
 -  Practice: 
     -  [Introduction to YARN + Hive](https://github.com/BosenkoTM/BigDataAnalitic_Practice/tree/main/exercises/winter_semester_2021-2022/02_hive).
     -  `Решение` задания [Introduction to YARN + Hive](https://github.com/BosenkoTM/BigDataAnalitic_Practice/blob/main/solutions/winter_semester_2021-2022/02_hive/Exercise_2.pdf).
-    -  НЕ ВЫПОЛНЯТЬ !!! [Introduction to HiveQL](https://github.com/BosenkoTM/BigDataAnalitic_Practice/tree/main/exercises/winter_semester_2021-2022/03_hive-ql_partitioning_hive-server).
+    -   [Introduction to HiveQL](https://github.com/BosenkoTM/BigDataAnalitic_Practice/tree/main/exercises/winter_semester_2021-2022/03_hive-ql_partitioning_hive-server).
     -  НЕ ВЫПОЛНЯТЬ !!! `Решение` задания [Introduction to HiveQL](https://github.com/BosenkoTM/BigDataAnalitic_Practice/tree/main/solutions/winter_semester_2021-2022/03_hive-ql_partitioning_hive-server).
 
 - `lecture 04` Batch processing:
