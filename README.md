@@ -20,6 +20,9 @@ Timur Bosenko M. (bosenkotm@mgpu.ru)
     - `St_work_Hadoop.ova` - образ настроенной ОС `Ubuntu 18.04 + Hadoop`;
     - `login.txt`;
     - `ubuntu-18.04.6-desktop-amd64.iso` - исходный образ ОС.
+ 
+ `Свободное программное обеспечение для бизнес-анализа`:
+    - `Pentaho`[скачать](https://disk.yandex.ru/d/iVAdHZAPliBbkQ).
 
 ## Текущая успеваемость
 
