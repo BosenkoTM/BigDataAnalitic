@@ -64,6 +64,8 @@ Timur Bosenko M. (bosenkotm@mgpu.ru)
 - Practice:
     - [Introduction to Spark_PySpark](https://github.com/BosenkoTM/BigDataAnalitic_Practice/tree/main/exercises/winter_semester_2021-2022/04_spark_pyspark_jupyter)
     -  `Решение` задания [Introduction to Spark_PySpark](https://github.com/BosenkoTM/BigDataAnalitic_Practice/tree/main/solutions/winter_semester_2021-2022/04_spark_pyspark_jupyter).
+-  `lecture 05-06` Batch vs Streaming:
+    - [Batch And Stream Processing](/lectures/5-Batch_And_Stream_Processing.pdf).
 - `lecture 07` Graphs:
     - [Apache Giraph](lectures/11-1-BigData_Giraph.pdf)
     - [Spark GraphX](lectures/11-2-BigData_GraphX.pdf)
