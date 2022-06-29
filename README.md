@@ -101,6 +101,9 @@ Timur Bosenko M. (bosenkotm@mgpu.ru)
 ## ТЕСТ 2. Зачетное тестирование. Дата проведения  29.06.2022 20.00 - 21.00
 [ССЫЛКА ДЛЯ ВХОДА](https://docs.google.com/forms/d/e/1FAIpQLSdxADzRpGOzLrVBPHwUQMt6sWIPO63nLwYt0KolAWKq3-xREQ/viewform?usp=sf_link)
 
+Вспомогательный материал:
+ - [Источник 1](https://disk.yandex.ru/d/PFn19cqtOtn__g?w=1).
+
 ## Зачетное практическое задание по курсу  Big Data Analytics: Approaches and Tools
 
 ### `Вариант 1`
