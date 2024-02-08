@@ -88,14 +88,14 @@ Timur Bosenko M. (bosenkotm@mgpu.ru)
 - `Семинар 1`. [Основные команды в Ubuntu](https://github.com/BosenkoTM/BigDataAnalitic_Practice/blob/main/common/docs/basic_shell_commands.md)
 - [Альтернативное практическое изучение инструментов **Big Data**](https://github.com/BosenkoTM/BigDataAnalitic_Practice#practice)
 
-## ТЕСТ 1. Apache Spark.  Дата проведения 27.06.2022, 14.40 - 16.10
+## ТЕСТ 1. Apache Spark.  
 
 [ССЫЛКА ДЛЯ ВХОДА](https://docs.google.com/forms/d/e/1FAIpQLSdD_Hl-WwPK69VGKKf0tw1vF3AgMKYQRR3w9RofcIFKlJM4YA/viewform?usp=sf_link)
 
 Вспомогательный материал:
  - [Источник 1](/books/test_books/Apache%2BZeppelin.pdf).
 
-## ТЕСТ 2. Зачетное тестирование. Дата проведения  29.06.2022 20.00 - 21.00
+## ТЕСТ 2. Зачетное тестирование. 
 [ССЫЛКА ДЛЯ ВХОДА](https://docs.google.com/forms/d/e/1FAIpQLSdxADzRpGOzLrVBPHwUQMt6sWIPO63nLwYt0KolAWKq3-xREQ/viewform?usp=sf_link)
 
 Вспомогательный материал:
