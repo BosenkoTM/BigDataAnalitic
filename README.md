@@ -24,9 +24,6 @@ Timur Bosenko M. (bosenkotm@mgpu.ru)
  `Свободное программное обеспечение для бизнес-анализа`:
     - `Pentaho`[скачать](https://disk.yandex.ru/d/iVAdHZAPliBbkQ).
 
-## Текущая успеваемость
-
- [ЦТ-201мз, АБД 2022](https://docs.google.com/spreadsheets/d/1ndnkqm8tmnvmygQrt_wuMUwJiVAsIgEqtLOMsLNlZMM/edit?usp=sharing)
 
 ## Big Data Analytics: Approaches and Tools
 
