@@ -1,7 +1,7 @@
-# Docker Images
+# Docker образы
 В этой папке содержатся все изображения Docker, использованные в этом курсе. Дополнительные сведения см. в файлах readme образов Docker (в подпапках), например: как их запустить, остановить и использовать.
 
-## Images:
+## образы:
 * [**Hadoop Base Image**](/hadoop_base) Hadoop 3.1.2 Base Image (Ubuntu 18.04)
 * [**Hadoop and Hive Base Image**](/hive_base) Hadoop 3.1.2 and Hive 3.1.2 Base Image (Ubuntu 18.04)
 * [**Hadoop, Hive and HiveServer2 Base Image**](https://github.com/marcelmittelstaedt/BigData/tree/master/docker/hiveserver_base) Hadoop 3.1.2, Hive 3.1.2 and HiveServer2 Base Image (Ubuntu 18.04)
