@@ -1,5 +1,6 @@
 # Семинар_1: Hadoop & MapReduce (local)
-Среда выполнения: виртуальная машина Ubuntu(Cent OS, Debian). 
+Среда выполнения: виртуальная машина Ubuntu(Cent OS, Debian).
+
 В репозитории  представлен образ с `Hadoop 3.3.6`  запуск Node в терминале
   
     ```bash
