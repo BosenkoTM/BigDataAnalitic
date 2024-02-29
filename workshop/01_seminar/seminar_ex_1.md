@@ -1,4 +1,4 @@
-# Семинар_1: Hadoop & MapReduce
+# Семинар_1: Hadoop & MapReduce (local)
 
 
 ## Задание 1. Работа в CLI оболочке ​​ОС Linux.
