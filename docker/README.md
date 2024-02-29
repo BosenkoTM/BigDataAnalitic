@@ -1,9 +1,5 @@
 # Docker Images
 В этой папке содержатся все изображения Docker, использованные в этом курсе. Дополнительные сведения см. в файлах readme образов Docker (в подпапках), например: как их запустить, остановить и использовать.
-Вы можете собрать контейнеры самостоятельно или извлечь их из репозитория Docker:
-```
-https://hub.docker.com/u/marcelmittelstaedt
-```
 
 ## Images:
 * [**Hadoop Base Image**](/hadoop_base) Hadoop 3.1.2 Base Image (Ubuntu 18.04)
