@@ -14,6 +14,12 @@
     ```
     
  Откройте браузер и войдите в `NameNode` Hadoop, введя  IP-адрес с портом `9870`.
+
+- `http://localhost:9870`
+- `http://localhost:9864`
+- `http://localhost:8088`
+
+ 
  Для остановки кластера `Hadoop`, необходимо остановить услуги `YARN` и `NameNode`.
    
      ```bash
