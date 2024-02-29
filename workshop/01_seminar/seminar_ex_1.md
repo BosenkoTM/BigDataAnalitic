@@ -188,7 +188,7 @@ Congratulations! You just run your first MapReduce program on Hadoop! Now try to
 copy the results from HDFS to your own directory in local machine and see the
 content of each result files.
 
-Клонировать репозиторий git (чтобы получить  данных):
+Клонировать репозиторий git (чтобы получить  данные):
 
 ```bash
 $ git clone https://github.com/BosenkoTM/BigDataAnalitic.git
