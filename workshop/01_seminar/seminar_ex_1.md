@@ -139,7 +139,7 @@ https://hadoop.apache.org/docs/r3.3.6/hadoop-project-dist/hadoop-common/FileSyst
     $ hadoop fs -get b_file.txt
     ```
 
-- Задание 2.5. Отобразить содержимое файла в HDFS в оболочке:
+- Задание 2.5. Отобразить содержимое файла в HDFS:
 
     ```bash
     $ hadoop fs -cat a_file.txt
