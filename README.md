@@ -13,16 +13,10 @@ Timur Bosenko M. (bosenkotm@mgpu.ru)
 
  `ВИРТУАЛЬНАЯ ГОСТЕВАЯ ОС`:
  
- - `D_System_22` [vm - VirtualBox](https://disk.yandex.ru/d/RTZvbDhtfXInMg), в его комплект входит:
-    - `VirtualBox-6.1.30-148432-Win.exe` - ПО для разворачивания виртуальной ОС; 
-    - `St_work_1.ova` - образ настроенной ОС `Ubuntu 18.04`;
-    - `St_work_Hadoop.ova` - образ настроенной ОС `Ubuntu 18.04 + Hadoop`;
-    - `login.txt`;
-    - `ubuntu-18.04.6-desktop-amd64.iso` - исходный образ ОС.
- 
- `Свободное программное обеспечение для бизнес-анализа`:
-    - `Pentaho`[скачать](https://disk.yandex.ru/d/iVAdHZAPliBbkQ).
-
+ - [U20-Hadoop_3_3_6.ova](https://disk.yandex.ru/d/gRMDe32McGortA), в его комплект входит:
+    - `VirtualBox-6.1.46-Win.exe` - ПО для разворачивания виртуальной ОС; 
+    - `U20-Hadoop_3_3_6.ova` - образ настроенной ОС `Ubuntu 20.04 + Hadoop`;
+    - `pass 1`;
 
 ## Big Data Analytics: Approaches and Tools
 
