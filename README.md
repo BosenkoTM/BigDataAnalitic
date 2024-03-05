@@ -14,8 +14,8 @@ Timur Bosenko M. (bosenkotm@mgpu.ru)
  `ВИРТУАЛЬНАЯ ГОСТЕВАЯ ОС`:
  
  - [U20-Hadoop_3_3_6.ova](https://disk.yandex.ru/d/gRMDe32McGortA), в его комплект входит:
-    - `VirtualBox-6.1.46-Win.exe` - ПО для разворачивания виртуальной ОС; 
-    - `U20-Hadoop_3_3_6.ova` - образ настроенной ОС `Ubuntu 20.04 + Hadoop`;
+    - `VirtualBox-6.1.46-Win.exe` - ПО для виртуальной ОС; 
+    - `U20-Hadoop_3_3_6.ova` - образ на основе ОС `Ubuntu 20.04 + Hadoop`;
     - `pass 1`;
 
 ## Big Data Analytics: Approaches and Tools
