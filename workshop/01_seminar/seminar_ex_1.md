@@ -1,7 +1,7 @@
 # Семинар_1: Hadoop & MapReduce (local)
 Среда выполнения: виртуальная машина Ubuntu(Cent OS, Debian).
 
-Наиболее часто встречающиеся [`HDFS File System Commands`](https://github.com/BosenkoTM/BigDataAnalitic/blob/main/workshop/01_seminar/commands_hdfs.md).
+Наиболее часто встречающиеся команды [`HDFS File System`](https://github.com/BosenkoTM/BigDataAnalitic/blob/main/workshop/01_seminar/commands_hdfs.md).
 
 В [репозитории](https://disk.yandex.ru/d/gRMDe32McGortA)  представлен образ с `Hadoop 3.3.6`. Запуск Node в терминале:
   
