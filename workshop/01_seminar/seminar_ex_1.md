@@ -279,11 +279,8 @@ hadoop@mgpu-VirtualBox:~$ sudo find / -name "hadoop-mapreduce-examples-3.3.6.jar
 $ hadoop jar $HADOOP_HOME/share/hadoop/mapreduce/hadoop-mapreduce-examples-3.3.6.jar wordcount /mgpu/mapreduce/War_and_Peace.txt  /mgpu/mapreduce/War_and_Peace_Output
 ```
 - Проверить доступность Ноды в Диспетчере ресурсов `Yarn`, для этого перейти по адресу в браузере по ссылке `http://localhost:8088/cluster/nodes`. В меню слева в закладке `Cluster/Nodes` просмотреть общую информацию о кластере (у нас псевдокластер):
-<img
-  src="../pictures_01/map_reduce_01.jpg"
-  alt="Alt text"
-  title="Optional title"
-  style="display: inline-block; margin: 0 auto; max-width: 300px">
+
+![My Image](workshop/01_seminar/pictures_01/map_reduce_01.jpg)
   
 - Проверить результат рвботы задания по расчету количества слов в тексте. Перейти в меню слева в закладку `FINISHED`  `http://mgpu-virtualbox:8088/cluster/apps/FINISHED` и проверить статус `FinalStatus`:
 - Перейти по ссылке в браузере (http://localhost:9870/explorer.html#/mgpu/mapreduce) в каталог `HDFS` для проверки полученного результата:
