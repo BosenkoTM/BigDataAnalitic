@@ -1,9 +1,11 @@
 # Семинар_1: Hadoop & MapReduce (local)
 Среда выполнения: виртуальная машина Ubuntu(Cent OS, Debian).
 
-Наиболее часто встречающиеся команды [`HDFS File System`](https://github.com/BosenkoTM/BigDataAnalitic/blob/main/workshop/01_seminar/commands_hdfs.md).
+Наиболее часто встречающиеся команды [`HDFS File System`](https://github.com/BosenkoTM/BigDataAnalitic/blob/main/workshop/01_seminar/commands_hdfs.md). 
 
-В [репозитории](https://disk.yandex.ru/d/gRMDe32McGortA)  представлен образ с `Hadoop 3.3.6`. Запуск Node в терминале:
+В [репозитории](https://disk.yandex.ru/d/gRMDe32McGortA)  представлен образ с `Hadoop 3.3.6`. Важно! Обновлен образ до  версии `U20-Hadoop_3_3_6 clear`, в котором выполнять все задания.
+
+Запуск `Node` в терминале:
   
     ```bash
     start-all.sh
@@ -15,14 +17,14 @@
    jps
     ```
     
- Откройте браузер и войдите в `NameNode` Hadoop, введя  IP-адрес с портом `9870`.
+ Откройте браузер и войдите в `NameNode` Hadoop, прописываем либо `IP-адрес` или `localhost`, порт `9870`.
 
 - `http://localhost:9870` Пользовательский интерфейс `NameNode` предоставляет полный обзор всего кластера.
 - `http://localhost:9864` Используется для доступа к отдельным узлам данных непосредственно из  браузера.
 - `http://localhost:8088` Диспетчер ресурсов — это бесценный инструмент, который позволяет отслеживать все запущенные процессы в кластере `Hadoop`.
 
  
- Для остановки кластера `Hadoop`, необходимо остановить услуги `YARN` и `NameNode`.
+ Для остановки кластера `Hadoop`, необходимо остановить сервисы `YARN` и `NameNode`.
    
      ```bash
     stop-dfs.sh
