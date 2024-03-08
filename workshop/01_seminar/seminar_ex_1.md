@@ -283,11 +283,19 @@ $ hadoop jar $HADOOP_HOME/share/hadoop/mapreduce/hadoop-mapreduce-examples-3.3.6
 ![My Image](/images/map_reduce_01.jpg)
   
 - Проверить результат рвботы задания по расчету количества слов в тексте. Перейти в меню слева в закладку `FINISHED`  `http://mgpu-virtualbox:8088/cluster/apps/FINISHED` и проверить статус `FinalStatus`:
+
+ ![My Image](/images/map_reduce_02.jpg)
+
 - Перейти по ссылке в браузере (http://localhost:9870/explorer.html#/mgpu/mapreduce) в каталог `HDFS` для проверки полученного результата:
+
+  ![My Image](/images/map_reduce_03.jpg)
  
 Видим, что задача выполнялась `4` раза, конечный каталог `War_and_Peace_Output4`.
 
 - Зайти в каталог `War_and_Peace_Output4`, скачать файл `part-r-00000`.
+
+  ![My Image](/images/map_reduce_04.jpg)
+  
 - Провести частотный анализ слов файла `part-r-00000` с использованием внешних программных средств визуализации.
 - На гистограмме указать `5` самых часто встречающихся слов, как правило — это существительное или глагол в единственном числе, учесть, что требуется сначала избавиться от стоп-слов, предлогов и союзов.
 
