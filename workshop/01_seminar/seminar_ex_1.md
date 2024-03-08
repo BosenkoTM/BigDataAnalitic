@@ -229,31 +229,35 @@ $ git clone https://github.com/BosenkoTM/BigDataAnalitic.git
 - `Задание 3.5.` Запустите Jar MapReduce по умолчанию (hadoop/share/hadoop/mapreduce/hadoop-mapreduce-examples-3.3.6.jar), чтобы получить количество вхождений строки «Faust» в текстовом файле.
 - `Задание 3.6.` Скопируйте результат задания MapReduce обратно в локальную файловую систему Ubuntu. 
 
-## Пример выполнения Задание 3. Тестирование работы MapReduce
+## Пример выполнения Задание 3. Тестирование работы MapReduce (файл War_and_Peace.txt)
 
 **Задание 3.1.** Клонировать каталог с данными для анализа:
 
 ```bash
 hadoop@mgpu-VirtualBox:~$ git clone https://github.com/BosenkoTM/RepoData.git 
 ```
-  Проверить наличие искомого файла, в примере War_and_Peace.txt
+  Проверить наличие искомого файла, в примере `War_and_Peace.txt`:
 
 ```bash
 hadoop@mgpu-VirtualBox:~/RepoData/BigDataAnalitic/01_hadoop/data$ ls
 ```
-Faust_de.txt  Faust_en.txt  Faust_ru.txt  War_and_Peace.txt
+Результат работы команды:
 
-** Задание 3.2. ** Скопировать файл из локальной папки в HDFS, предварительно создать каталог.
+`Faust_de.txt  Faust_en.txt  Faust_ru.txt  War_and_Peace.txt`
+
+**Задание 3.2.** Скопировать файл из локальной папки в `HDFS`, предварительно создать каталог.
 
 ```bash
 $ hadoop fs -mkdir /mgpu/mapreduce
 $ hadoop fs -copyFromLocal -f RepoData/BigDataAnalitic/01_hadoop/data/War_and_Peace.txt /mgpu/mapreduce
 ```
-Проверка наличия файла:
+Проверка наличия файла в `HDFS`:
 $ hadoop fs -ls /mgpu/mapreduce
 
-Found 1 items
--rw-r--r--   1 hadoop supergroup    2058499 2024-03-08 14:45 /mgpu/mapreduce/War_and_Peace.txt
+Результат работы команды:
+
+` Found 1 items
+-rw-r--r--   1 hadoop supergroup    2058499 2024-03-08 14:45 /mgpu/mapreduce/War_and_Peace.txt`
 
 Задание 3.3. Запустите MapReduce для расчета количества слов в текстовом файле  
 Jar-файл по умолчанию расположен в каталоге: 
