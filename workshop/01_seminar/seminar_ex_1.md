@@ -6,13 +6,13 @@
 В [репозитории](https://disk.yandex.ru/d/gRMDe32McGortA)  представлен образ с `Hadoop 3.3.6`. Запуск Node в терминале:
   
     ```bash
-    $ start-all.sh
+    start-all.sh
     ```
     
 Чтобы проверить статус всех сервисов `Hadoop`, выполните в терминале команду `jps`:
    
     ```bash
-    $ jps
+   jps
     ```
     
  Откройте браузер и войдите в `NameNode` Hadoop, введя  IP-адрес с портом `9870`.
@@ -25,8 +25,8 @@
  Для остановки кластера `Hadoop`, необходимо остановить услуги `YARN` и `NameNode`.
    
      ```bash
-    $ stop-dfs.sh
-    $ stop-yarn.sh
+    stop-dfs.sh
+    stop-yarn.sh
     ```
     
 ## Задание 1. Работа в CLI оболочке ​​ОС Linux.
@@ -248,11 +248,16 @@ hadoop@mgpu-VirtualBox:~/RepoData/BigDataAnalitic/01_hadoop/data$ ls
 **Задание 3.2.** Скопировать файл из локальной папки в `HDFS`, предварительно создать каталог.
 
 ```bash
-$ hadoop fs -mkdir /mgpu/mapreduce
-$ hadoop fs -copyFromLocal -f RepoData/BigDataAnalitic/01_hadoop/data/War_and_Peace.txt /mgpu/mapreduce
+hadoop fs -mkdir /mgpu/mapreduce
+```
+```bash
+hadoop fs -copyFromLocal -f RepoData/BigDataAnalitic/01_hadoop/data/War_and_Peace.txt /mgpu/mapreduce
 ```
 - Проверка наличия файла в `HDFS`:
-$ hadoop fs -ls /mgpu/mapreduce
+
+```bash
+hadoop fs -ls /mgpu/mapreduce
+```
 
 Результат работы команды:
 
@@ -268,7 +273,7 @@ $ hadoop fs -ls /mgpu/mapreduce
 - Проверить путь к системному `Jar-файлу`, в котором реализован алгоритм подсчета слов в тексте:
 
 ```bash
-hadoop@mgpu-VirtualBox:~$ sudo find / -name "hadoop-mapreduce-examples-3.3.6.jar"
+sudo find / -name "hadoop-mapreduce-examples-3.3.6.jar"
 ```
 Результат работы команды:
 
@@ -276,7 +281,7 @@ hadoop@mgpu-VirtualBox:~$ sudo find / -name "hadoop-mapreduce-examples-3.3.6.jar
 
 - Выполнить подсчет слов в тексте `War_and_Peace.txt`:
 ```bash
-$ hadoop jar $HADOOP_HOME/share/hadoop/mapreduce/hadoop-mapreduce-examples-3.3.6.jar wordcount /mgpu/mapreduce/War_and_Peace.txt  /mgpu/mapreduce/War_and_Peace_Output
+hadoop jar $HADOOP_HOME/share/hadoop/mapreduce/hadoop-mapreduce-examples-3.3.6.jar wordcount /mgpu/mapreduce/War_and_Peace.txt  /mgpu/mapreduce/War_and_Peace_Output
 ```
 - Проверить доступность Ноды в Диспетчере ресурсов `Yarn`, для этого перейти по адресу в браузере по ссылке `http://localhost:8088/cluster/nodes`. В меню слева в закладке `Cluster/Nodes` просмотреть общую информацию о кластере (у нас псевдокластер):
 
@@ -301,6 +306,35 @@ $ hadoop jar $HADOOP_HOME/share/hadoop/mapreduce/hadoop-mapreduce-examples-3.3.6
 
 **Индивидуальное задание**. Создать `jar-файл` [`wordcount v2.0`](https://hadoop.apache.org/docs/current/hadoop-mapreduce-client/hadoop-mapreduce-client-core/MapReduceTutorial.html#Example:_WordCount_v2.0), скомпилировать его и реализовать подсчет слов в тексте. 
 
+**Задание 3.5** Запустить Jar MapReduce по умолчанию (hadoop/share/hadoop/mapreduce/hadoop-mapreduce-examples-3.3.6.jar), чтобы получить количество вхождений строки «war» в текстовом файле `War_and_Peace.txt`.
 
+- Скопировать образец файла из репозитория `GIT` в каталог пользователя `HDFS`:
 
+- Создать каталог:
+
+```bash
+hadoop fs -mkdir /mgpu/mapreduce2
+```
+
+- Перенести файл:
+
+```bash
+git clone https://github.com/BosenkoTM/RepoData.git
+```
+
+```bash
+hadoop fs -put RepoData/BigDataAnalitic/01_hadoop/data/War_and_Peace.txt /mgpu/mapreduce2
+```
+
+- Произвести расчет встречаемости слова `war`:
+```bash
+hadoop jar $HADOOP_HOME/share/hadoop/mapreduce/hadoop-mapreduce-examples-3.3.6.jar grep /mgpu/mapreduce2/War_and_Peace.txt /mgpu/mapreduce2/War_and_Peace_Count_Output 'war'
+```
+- Проверить результат рвботы задания по расчету вхождений строки «war» в тексте. Перейти в меню слева в закладку `FINISHED`  `http://mgpu-virtualbox:8088/cluster/apps/FINISHED` и проверить статус `FinalStatus`:
+
+ ![My Image](/images/map_reduce_05.jpg)
+
+- Перейти по ссылке в браузере (http://localhost:9870/explorer.html#/mgpu/mapreduce) в каталог `HDFS` для проверки полученного результата:
+
+  ![My Image](/images/map_reduce_06.jpg)
 
