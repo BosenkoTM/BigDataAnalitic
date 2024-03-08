@@ -334,7 +334,7 @@ hadoop jar $HADOOP_HOME/share/hadoop/mapreduce/hadoop-mapreduce-examples-3.3.6.j
 
  ![My Image](/images/map_reduce_05.jpg)
 
-- Перейти по ссылке в браузере (http://localhost:9870/explorer.html#/mgpu/mapreduce) в каталог `HDFS` для проверки полученного результата:
+- Перейти по ссылке в браузере (http://localhost:9870/explorer.html#/mgpu/mapreduce2/War_and_Peace_Count_Output) в каталог `HDFS` для проверки полученного результата:
 
   ![My Image](/images/map_reduce_06.jpg)
 
