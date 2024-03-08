@@ -229,6 +229,66 @@ $ git clone https://github.com/BosenkoTM/BigDataAnalitic.git
 - `Задание 3.5.` Запустите Jar MapReduce по умолчанию (hadoop/share/hadoop/mapreduce/hadoop-mapreduce-examples-3.3.6.jar), чтобы получить количество вхождений строки «Faust» в текстовом файле.
 - `Задание 3.6.` Скопируйте результат задания MapReduce обратно в локальную файловую систему Ubuntu. 
 
+## Пример выполнения Задание 3. Тестирование работы MapReduce
+
+**Задание 3.1.** Клонировать каталог с данными для анализа:
+
+```bash
+hadoop@mgpu-VirtualBox:~$ git clone https://github.com/BosenkoTM/RepoData.git 
+```
+  Проверить наличие искомого файла, в примере War_and_Peace.txt
+
+```bash
+hadoop@mgpu-VirtualBox:~/RepoData/BigDataAnalitic/01_hadoop/data$ ls
+```
+Faust_de.txt  Faust_en.txt  Faust_ru.txt  War_and_Peace.txt
+
+** Задание 3.2. ** Скопировать файл из локальной папки в HDFS, предварительно создать каталог.
+
+```bash
+$ hadoop fs -mkdir /mgpu/mapreduce
+$ hadoop fs -copyFromLocal -f RepoData/BigDataAnalitic/01_hadoop/data/War_and_Peace.txt /mgpu/mapreduce
+```
+Проверка наличия файла:
+$ hadoop fs -ls /mgpu/mapreduce
+
+Found 1 items
+-rw-r--r--   1 hadoop supergroup    2058499 2024-03-08 14:45 /mgpu/mapreduce/War_and_Peace.txt
+
+Задание 3.3. Запустите MapReduce для расчета количества слов в текстовом файле  
+Jar-файл по умолчанию расположен в каталоге: 
+
+$HADOOP_HOME/share/hadoop/mapreduce/hadoop-mapreduce-examples-3.3.6.jar
+
+Проверить путь к системному Jar-файлу, в котором реализован алгоритм подсчета слов в тексте:
+
+hadoop@mgpu-VirtualBox:~$ sudo find / -name "hadoop-mapreduce-examples-3.3.6.jar"
+
+/home/hadoop/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-examples-3.3.6.jar
+
+Выполнить подсчет слов в тексте War_and_Peace.txt:
+ 
+$ hadoop jar $HADOOP_HOME/share/hadoop/mapreduce/hadoop-mapreduce-examples-3.3.6.jar wordcount /mgpu/mapreduce/War_and_Peace.txt  /mgpu/mapreduce/War_and_Peace_Output
+
+Проверить доступность Ноды в Диспетчере ресурсов Yarn, для этого перейти по адресу в браузере по ссылке http://localhost:8088/cluster/nodes. В меню слева в закладке Cluster/Nodes увидим общую информацию о кластере (у нас псевдокластер):
+
+
+ 
+Проверить результат рвботы задания по расчету количества слов в тексте. Перейти в меню слева в закладку FINISHED и проверить статус FinalStatus:
+
+ 
+Проверить доступность Ноды в Диспетчере ресурсов Yarn, для этого перейти по адресу в браузере по ссылке http://localhost:8088/cluster/nodes. В меню слева в закладке Cluster/Nodes увидим общую информацию о кластере (у нас псевдокластер):
+
+
+Перейти по ссылке в браузере (http://localhost:9870/explorer.html#/mgpu/mapreduce ) в каталог HDFS для проверки полученного результата:
+ 
+Видим, что задача выполнялась 4 раза, конечный каталог War_and_Peace_Output4.
+Зайти в каталог War_and_Peace_Output4, скачать файл 	part-r-00000. 
+Провести частотный анализ слов с использованием внешних программных средств визуализации.
+На гистограмме указать 5 самых часто встречающихся слов, учесть, что требуется сначала избавиться от стоп-слов, предлогов и союзов, как правило — это существительное или глагол в единственном числе.
+
+*Создать jar-файл wordcount v2.0, скомпилировать его и реализовать подсчет слов в тексте. 
+https://hadoop.apache.org/docs/current/hadoop-mapreduce-client/hadoop-mapreduce-client-core/MapReduceTutorial.html#Example:_WordCount_v2.0
 
 
 
