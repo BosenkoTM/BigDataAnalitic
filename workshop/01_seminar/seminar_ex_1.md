@@ -3,7 +3,7 @@
 
 Наиболее часто встречающиеся команды [`HDFS File System`](https://github.com/BosenkoTM/BigDataAnalitic/blob/main/workshop/01_seminar/commands_hdfs.md). 
 
-В [репозитории](https://disk.yandex.ru/d/gRMDe32McGortA)  представлен образ с `Hadoop 3.3.6`. Важно! Обновлен образ до  версии `U20-Hadoop_3_3_6 clear`, в котором выполнять все задания.
+В [репозитории](https://disk.yandex.ru/d/gRMDe32McGortA)  представлен образ с `Hadoop 3.3.6`. Важно! Обновлен образ(08.03.2024) до  версии `U20-Hadoop_3_3_6 clear`, в котором выполнять все задания.
 
 Запуск `Node` в терминале:
   
@@ -349,3 +349,4 @@ hadoop jar $HADOOP_HOME/share/hadoop/mapreduce/hadoop-mapreduce-examples-3.3.6.j
   -  лог-файл работы `HDFS`;
   - скрины, подтверждающие выпознение работы в `Hadoop`.
   - частотный анализ текста(в Python+DataLens), выполненный на основе полученного промежуточного результата в `Hadoop`.
+  - Все выполненные команды оформить отдельным файлом  в формате `ФИО_группа.txt`.
