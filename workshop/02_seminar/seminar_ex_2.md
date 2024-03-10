@@ -4,7 +4,7 @@
 
 Наиболее часто встречающиеся команды [`HDFS File System`](https://github.com/BosenkoTM/BigDataAnalitic/blob/main/workshop/01_seminar/commands_hdfs.md). 
 
-В [репозитории](https://disk.yandex.ru/d/_bvlfpFNkuGSzw)  представлен образ с `Hadoop 3.3.6+Hive`. Важно! Обновлен образ(11.03.2024) до  версии `U20-Hadoop_3_3_6+Docker`, в котором выполнять все задания.
+В [репозитории](https://disk.yandex.ru/d/_bvlfpFNkuGSzw)  представлен образ с `Hadoop 3.3.6+Hive`.
 
 1. Развернуть образ `U20-Hadoop_3_3_6+Docker` в `Oracle VM VirtualBox`. В данном образе установка `Docker` выполнена в полном объеме со всеми дополнениями. Если требуется установить более актуальную версию, выполнить следующую инструкцию:
 
