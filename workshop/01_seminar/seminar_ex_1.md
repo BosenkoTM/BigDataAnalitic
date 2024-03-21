@@ -8,7 +8,7 @@
 Запуск `Node` в терминале:
   
 ```bash
-start-all.sh
+git clone https://github.com/BosenkoTM/cloudera-quickstart.git
 ```
     
 Чтобы проверить статус всех сервисов `Hadoop`, выполните в терминале команду `jps`:
