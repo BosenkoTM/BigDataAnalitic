@@ -148,3 +148,156 @@ stop-yarn.sh
   -  лог-файл работы `HDFS`;
   - скрины, подтверждающие выпознение работы в `Hadoop`.
   - Все выполненные команды оформить отдельным файлом  в формате `ФИО_группа.txt`.
+
+## Пример выполнения Задание 1. Hive: создание внешних таблиц и работа с ними
+
+`1.` Подготовить среду `Hive`.
+`2.` Скачать [датасет](https://datasets.imdbws.com/name.basics.tsv.gz).
+```bash
+wget https://datasets.imdbws.com/name.basics.tsv.gz
+```
+
+```bash
+gunzip name.basics.tsv.gz
+```
+`3-1.` Создаем `HDFS` каталог /user/cloudera/imdb/name_basics для файла `name.basics.tsv`:
+
+```bash
+hadoop fs -mkdir /user/cloudera/imdb/name_basics
+```
+`3-2.` Перемещаем TSV-файл в HDFS каталог
+
+hadoop fs -put name.basics.tsv /user/cloudera/imdb/name_basics
+
+hdfs dfs -ls /user/cloudera/imdb
+
+`4.` Создайте внешнюю `Hive` таблицу `name_basics`  для `name.basics.tsv`:
+
+hive >
+
+```sql
+CREATE EXTERNAL TABLE IF NOT EXISTS name_basics( 
+nconst STRING,
+primary_name STRING,
+birth_year INT,
+death_year STRING,
+primary_profession STRING,
+known_for_titles STRING
+) COMMENT 'IMDb Actors' ROW FORMAT DELIMITED FIELDS TERMINATED BY '\t' STORED AS TEXTFILE LOCATION '/user/cloudera/imdb/name_basics' 
+TBLPROPERTIES ('skip.header.line.count'='1’);
+```
+Проверка в `HUE`:
+
+```sql
+select * from title_basics limit 3;
+![image](https://github.com/BosenkoTM/BigDataAnalitic/assets/38157538/cd02f11f-d3dc-48cd-a519-a60a929a06a0)
+```
+
+`5.` Используйте `HiveQL`, чтобы ответить на следующие вопросы:
+- Сколько фильмов и сериалов находится в наборе данных `IMDB`? 
+- Кто самый молодой актер/сценарист/... в наборе данных?
+- Создайте `таблицу_результат` (`tconst`, `original_title`, `start_year`, `average_rating`, `num_votes`), которая состоит из:
+    - фильм вышел в  `2016` году или позднее;
+    - фильм имеет средний рейтинг, равный или превышающий `8,1`.
+    - проголосовали более `100 000` раз за фильм.
+
+`a)` Сколько фильмов и сколько сериалов содержится в наборе данных IMDB?
+
+```sql
+SELECT m.title_type, count(*)
+FROM title_basics m 
+GROUP BY m.title_type;
+```
+`b)` Кто самый молодой актер/сценарист/… в наборе данных?
+
+Просмотреть названия полей для уточнения запросов:
+
+```sql
+SELECT * FROM name_basics;
+```
+Проведем группировку до дате всех пользователей, выявим степень чистоты данных:
+
+```sql
+SELECT primary_name as Name, birth_year as dateOfBirth
+FROM name_basics n
+GROUP BY n.birth_year, n.primary_name;
+```
+Чистим данные и отвечаем на поставленный вопрос:
+
+```sql
+ SELECT primary_name as Name, birth_year as dateOfBirth
+FROM name_basics n
+WHERE birth_year IS NOT NULL
+GROUP BY n.birth_year, n.primary_name
+ORDER by n.birth_year DESC;
+```
+Поиск молодых актеров, один из вариантов:
+
+```sql
+SELECT primary_name as Name, birth_year as dateOfBirth
+FROM name_basics n
+WHERE birth_year IS NOT NULL AND primary_profession LIKE 'actor%'
+GROUP BY n.birth_year, n.primary_name
+ORDER by n.birth_year DESC;
+```
+Тоже самое, но с выводом идентификатора `nconst` для поиска по сайту:
+
+```sql
+SELECT primary_name as Name, birth_year as dateOfBirth, n.nconst
+FROM name_basics n
+WHERE birth_year IS NOT NULL AND primary_profession LIKE 'actor%'
+GROUP BY n.birth_year, n.primary_name, n.nconst
+ORDER by n.birth_year DESC;
+```
+`c)` Создать список (`m.tconst`, `m.original_title`, `m.start_year`, `r.average_rating`, `r.num_votes`) фильмов, включающий следующие элементы: 
+Фильм вышел в `2010` году или позднее.
+Фильм имеет средний рейтинг равный или выше `8,1`.
+проголосовали за фильм более `100 000` раз.
+
+```sql
+SELECT m.tconst, m.original_title, m.start_year, r.average_rating, r.num_votes FROM title_basics m JOIN title_ratings r on (m.tconst = r.tconst)
+WHERE r.average_rating >= 8.1 and m.start_year >= 2010 and m.title_type = 'movie' and r.num_votes > 100000
+ORDER BY r.average_rating desc, r.num_votes DESC;
+```
+`d)` Сколько фильмов в списке с)
+
+```sql
+SELECT count(*)
+FROM title_basics m JOIN title_ratings r on (m.tconst = r.tconst)
+WHERE r.average_rating >= 8.1 and m.start_year >= 2010 and m.title_type = 'movie' and r.num_votes > 100000;
+```
+`e)` Требуется узнать, какие годы были великими для кино. Создайте список с одной строкой в год и соответствующим количеством фильмов, которые:
+имеют средний рейтинг выше 8 проголосовали за фильм более 100 000 раз в порядке убывания по количеству фильмов.
+
+```sql
+SELECT m.start_year, count(*)
+FROM title_basics m JOIN title_ratings r on (m.tconst = r.tconst)
+WHERE r.average_rating > 8 AND m.title_type = 'movie' 
+AND r.num_votes > 100000
+GROUP BY m.start_year
+ORDER BY count(*) DESC;
+```
+`f)` Итак, 1995 год кажется действительно хорошим годом для кино, было выпущено 8 действительно хороших фильмов, но какие?
+
+```sql
+SELECT
+		m.tconst, m.original_title, m.start_year, r.average_rating, 
+		r.num_votes
+	  FROM title_basics m JOIN title_ratings r ON (m.tconst = r.tconst) 
+         WHERE
+		r.average_rating > 8 AND m.title_type = 'movie' 
+		AND r.num_votes > 100000 AND m.start_year = 1995
+	  ORDER BY r.average_rating DESC;
+```
+
+
+
+
+
+
+
+
+
+
+
+ 
