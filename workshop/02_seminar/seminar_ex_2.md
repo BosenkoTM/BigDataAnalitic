@@ -127,7 +127,87 @@ stop-yarn.sh
 
 ## Задание 1. Hive: создание внешних таблиц и работа с ними
 
+В следующих упражнениях используем [Cloudera quickstart VM](https://downloads.cloudera.com/demo_vm/virtualbox/cloudera-quickstart-vm-5.13.0-0-virtualbox.zip).
+
+* Загрузить и разархивировать приложение для VirtualBox.
+
+* Импортировать файл `.ova` в VirtualBox. **сразу не запускайте**, сначало настроить виртуальное окружение.
+
+* Установить для виртуальной машины `cloudera-quickstart-vm-5.13.0-0-virtualbox` диапазон ОЗУ от 4 до 16 ГБ  `Configuration > System`. 
+
+* Запустить виртуальную машину `cloudera-quickstart-vm-5.13.0-0-virtualbox`.
+
+* Чтобы [включить копирование/вставку](https://www.techrepublic.com/article/how-to-enable-copy-and-paste-in-virtualbox/) с ПК, выбрать `Devices > Shared Clipboard > Bidirectional`.
+
+
 1. Подготовить среду `Hive`.
+
+```bash
+wget https://datasets.imdbws.com/title.basics.tsv.gz
+```
+
+```bash
+wget https://datasets.imdbws.com/title.ratings.tsv.gz
+```
+
+```bash
+gunzip title.basics.tsv.gz
+```
+
+```bash
+gunzip title.ratings.tsv.gz
+```
+
+```bash
+hadoop fs -mkdir /user/hadoop/imdb
+```
+
+```bash
+hadoop fs -mkdir /user/hadoop/imdb/title_basics
+```
+
+```bash
+hadoop fs -mkdir /user/hadoop/imdb/title_ratings
+```
+
+```bash
+hadoop fs -put title.basics.tsv /user/hadoop/imdb/title_basics/title.basics.tsv
+```
+
+```bash
+hadoop fs -put title.ratings.tsv /user/hadoop/imdb/title_ratings/title.ratings.tsv
+```
+
+```sql
+CREATE EXTERNAL TABLE IF NOT EXISTS title_ratings(
+tconst STRING, 
+average_rating DECIMAL(2,1), 
+num_votes BIGINT
+) COMMENT 'IMDb Ratings'
+ROW FORMAT DELIMITED FIELDS TERMINATED BY '\t' STORED AS 
+TEXTFILE LOCATION '/user/clouderaimdb/title_ratings' 
+TBLPROPERTIES ('skip.header.line.count'='1');
+```
+
+```sql
+CREATE EXTERNAL TABLE IF NOT EXISTS title_basics ( 
+tconst STRING,
+title_type STRING,
+primary_title STRING,
+original_title STRING,
+is_adult DECIMAL(1,0),
+start_year DECIMAL(4,0),
+end_year STRING,
+runtime_minutes INT,
+genres STRING
+) COMMENT 'IMDb Movies' ROW FORMAT DELIMITED FIELDS TERMINATED BY 
+'\t' STORED AS TEXTFILE LOCATION '/user/hadoop/imdb/title_basics'
+TBLPROPERTIES ('skip.header.line.count'='1');
+```
+
+
+
+
 2. Скачать [датасет](https://datasets.imdbws.com/name.basics.tsv.gz) в контейнер.  
 3. Создать каталог в `HDFS` для файла `name.basics.tsv`. 
 4. Создайте внешнюю `Hive` таблицу `name_basics`  для `name.basics.tsv`.
