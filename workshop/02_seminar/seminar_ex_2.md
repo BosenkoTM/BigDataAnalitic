@@ -141,7 +141,9 @@ stop-yarn.sh
 6. Сколько фильмов находится в `таблице_результате`?
 
 Все результаты выполнения запросов подкрепить скринов из `YARN`, например:
-  ![My Image](/images//images/yarn_uns.png)
+ 
+  ![My Image](/images/yarn_uns.png)
+
 
 ## Результаты работы представить в виде файла ФИО-02.pdf (выгрузить в `moodle`), в котором отражены следующие результаты:
 - постановка задачи;
@@ -193,7 +195,6 @@ TBLPROPERTIES ('skip.header.line.count'='1’);
 
 ```sql
 select * from title_basics limit 3;
-![image](https://github.com/BosenkoTM/BigDataAnalitic/assets/38157538/cd02f11f-d3dc-48cd-a519-a60a929a06a0)
 ```
 
 `5.` Используйте `HiveQL`, чтобы ответить на следующие вопросы:
