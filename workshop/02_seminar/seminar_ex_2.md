@@ -129,7 +129,7 @@ stop-yarn.sh
 
 1. Подготовить среду `Hive`.
 2. Скачать [датасет](https://datasets.imdbws.com/name.basics.tsv.gz) в контейнер.  
-3. Создать каталог в `HDFS` /user/hadoop/imdb/name_basics/ для файла `name.basics.tsv`. 
+3. Создать каталог в `HDFS` для файла `name.basics.tsv`. 
 4. Создайте внешнюю `Hive` таблицу `name_basics`  для `name.basics.tsv`.
 5. Используйте `HiveQL`, чтобы ответить на следующие вопросы:
 - Сколько фильмов и сериалов находится в наборе данных `IMDB`? 
