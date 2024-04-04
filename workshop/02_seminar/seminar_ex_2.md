@@ -185,7 +185,7 @@ average_rating DECIMAL(2,1),
 num_votes BIGINT
 ) COMMENT 'IMDb Ratings'
 ROW FORMAT DELIMITED FIELDS TERMINATED BY '\t' STORED AS 
-TEXTFILE LOCATION '/user/clouderaimdb/title_ratings' 
+TEXTFILE LOCATION '/user/cloudera/imdb/title_ratings' 
 TBLPROPERTIES ('skip.header.line.count'='1');
 ```
 
@@ -201,7 +201,7 @@ end_year STRING,
 runtime_minutes INT,
 genres STRING
 ) COMMENT 'IMDb Movies' ROW FORMAT DELIMITED FIELDS TERMINATED BY 
-'\t' STORED AS TEXTFILE LOCATION '/user/hadoop/imdb/title_basics'
+'\t' STORED AS TEXTFILE LOCATION '/user/cloudera/imdb/title_basics'
 TBLPROPERTIES ('skip.header.line.count'='1');
 ```
 
