@@ -124,7 +124,7 @@ db.createCollection("views")
 - **Пользователь student:** student / Stud2024!!!
 - **База данных:** studpg
 
-## Варианты заданий
+## Пример выполнения задания
 
 ### Задание №30. Рекомендательная система
 
@@ -138,14 +138,14 @@ db.createCollection("views")
 
 2. Найти товары, которые просматривал пользователь X, а также другие пользователи, смотревшие те же товары.
 
-#### Для MongoDB:
+#### Для MongoDB
 1. Создать коллекции:
    - `users` (с массивом просмотренных товаров)
    - `products` (информация о товарах)
 
 2. Написать сложный агрегационный запрос для поиска "похожих" пользователей.
 
-#### Анализ в Jupyter Notebook:
+#### Анализ в Jupyter Notebook
 Сравнить производительность и сложность реализации простого запроса для коллаборативной фильтрации ("users who viewed this also viewed").
 
 ## Подробные шаги решения для задания №30
@@ -428,5 +428,6 @@ sudo docker compose down -v
 - [Документация PostgreSQL](https://www.postgresql.org/docs/)
 - [Docker Compose документация](https://docs.docker.com/compose/)
 - [Jupyter Notebook документация](https://jupyter-notebook.readthedocs.io/)
+
 
 
