@@ -63,17 +63,17 @@ git clone <repository_url> .
 
 1. **Запуск всех сервисов:**
 ```bash
-docker compose up -d
+sudo docker compose up -d
 ```
 
 2. **Проверка статуса сервисов:**
 ```bash
-docker compose ps
+sudo docker compose ps
 ```
 
 3. **Просмотр логов (при необходимости):**
 ```bash
-docker compose logs -f
+sudo docker compose logs -f
 ```
 
 ### Шаг 3: Настройка баз данных
@@ -81,7 +81,7 @@ docker compose logs -f
 #### PostgreSQL
 1. **Подключение к PostgreSQL:**
 ```bash
-docker exec -it postgresql psql -U postgres -d studpg
+sudo docker exec -it postgresql psql -U postgres -d studpg
 ```
 
 2. **Создание пользователя student:**
@@ -96,10 +96,10 @@ GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO student;
 1. **Подключение к MongoDB:**
 ```bash
 # Для MongoDB 4.4 используйте mongo (не mongosh)
-docker exec -it mongodb mongo -u mongouser -p mongopass
+sudo docker exec -it mongodb mongo -u mongouser -p mongopass
 
 # Или подключение к конкретной базе данных
-docker exec -it mongodb mongo -u mongouser -p mongopass studmongo
+sudo docker exec -it mongodb mongo -u mongouser -p mongopass studmongo
 ```
 
 2. **Создание базы данных studmongo:**
@@ -126,11 +126,11 @@ db.createCollection("views")
 
 ## Варианты заданий
 
-### Задание №30: Рекомендательная система
+### Задание №30. Рекомендательная система
 
-**Цель:** Создать систему рекомендаций товаров на основе поведения пользователей.
+**Цель.** Создать систему рекомендаций товаров на основе поведения пользователей.
 
-#### Для PostgreSQL:
+#### Для PostgreSQL
 1. Создать таблицы:
    - `users` (id, name, email, age)
    - `products` (id, name, category, price)
@@ -150,7 +150,7 @@ db.createCollection("views")
 
 ## Подробные шаги решения для задания №30
 
-### Шаг 1: Подготовка данных
+### Шаг 1. Подготовка данных
 
 1. **Генерация тестовых данных (10,000 записей для обычных данных, 100,000 для больших данных):**
 ```python
@@ -187,7 +187,7 @@ def generate_views(users_count, products_count, n):
     return views
 ```
 
-### Шаг 2: Реализация в PostgreSQL
+### Шаг 2. Реализация в PostgreSQL
 
 1. **Создание таблиц:**
 ```sql
@@ -221,7 +221,7 @@ CREATE INDEX idx_views_product_id ON views(product_id);
 CREATE INDEX idx_views_timestamp ON views(timestamp);
 ```
 
-2. **Запрос для поиска похожих пользователей:**
+2. **Запрос для поиска похожих пользователей**
 ```sql
 -- Найти товары, которые просматривал пользователь X
 WITH user_products AS (
@@ -244,9 +244,9 @@ FROM similar_users su
 JOIN users u ON su.user_id = u.id;
 ```
 
-### Шаг 3: Реализация в MongoDB
+### Шаг 3. Реализация в MongoDB
 
-1. **Структура документов:**
+1. **Структура документов**
 ```javascript
 // Коллекция users
 {
@@ -269,7 +269,7 @@ JOIN users u ON su.user_id = u.id;
 }
 ```
 
-2. **Агрегационный запрос для поиска похожих пользователей:**
+2. **Агрегационный запрос для поиска похожих пользователей**
 ```javascript
 db.users.aggregate([
     // Найти пользователя X
@@ -315,7 +315,7 @@ db.users.aggregate([
 ])
 ```
 
-### Шаг 4: Сравнение производительности
+### Шаг 4. Сравнение производительности
 
 1. **Измерение времени выполнения запросов:**
 ```python
@@ -356,10 +356,10 @@ plt.show()
 
 ## Проверка работоспособности
 
-### 1. Проверка MongoDB:
+### 1. Проверка MongoDB
 ```bash
 # Подключение к MongoDB (для версии 4.4 используйте mongo)
-docker exec -it mongodb mongo -u mongouser -p mongopass
+sudo docker exec -it mongodb mongo -u mongouser -p mongopass
 
 # Проверка баз данных
 show dbs
@@ -372,7 +372,7 @@ show collections
 ### 2. Проверка PostgreSQL:
 ```bash
 # Подключение к PostgreSQL
-docker exec -it postgresql psql -U postgres -d studpg
+sudo docker exec -it postgresql psql -U postgres -d studpg
 
 # Проверка таблиц
 \dt
@@ -389,7 +389,7 @@ docker exec -it postgresql psql -U postgres -d studpg
 ### 4. Проверка Jupyter Notebook:
 ```bash
 # Проверка статуса Jupyter
-docker exec -it jupyter jupyter notebook list
+sudo docker exec -it jupyter jupyter notebook list
 
 # Доступ к Jupyter через браузер
 # URL: http://localhost:8888
@@ -400,25 +400,25 @@ docker exec -it jupyter jupyter notebook list
 
 ```bash
 # Остановка всех сервисов
-docker compose down
+sudo docker compose down
 
 # Остановка с удалением volumes (ОСТОРОЖНО: удалит все данные!)
-docker compose down -v
+sudo docker compose down -v
 ```
 
 ## Заключение
 
 В ходе выполнения лабораторной работы мы:
 
-1. Настроили окружение с MongoDB 4.4 и PostgreSQL 16
-2. Реализовали рекомендательную систему в обеих СУБД
-3. Сравнили производительность и сложность реализации
-4. Проанализировали преимущества и недостатки каждого подхода
+1. Настроили окружение с MongoDB 4.4 и PostgreSQL 16.
+2. Реализовали рекомендательную систему в обеих СУБД.
+3. Сравнили производительность и сложность реализации.
+4. Проанализировали преимущества и недостатки каждого подхода.
 
 **Основные выводы:**
-- PostgreSQL лучше подходит для сложных аналитических запросов с множественными JOIN
-- MongoDB более гибкая для работы с неструктурированными данными
-- Выбор СУБД зависит от конкретных требований проекта
+- PostgreSQL лучше подходит для сложных аналитических запросов с множественными JOIN.
+- MongoDB более гибкая для работы с неструктурированными данными.
+- Выбор СУБД зависит от конкретных требований проекта.
 - 
 [Лабораторная работа 4.1. Сравнение подходов хранения больших данных](http://95.131.149.21/moodle/mod/assign/view.php?id=918)
 
@@ -428,4 +428,5 @@ docker compose down -v
 - [Документация PostgreSQL](https://www.postgresql.org/docs/)
 - [Docker Compose документация](https://docs.docker.com/compose/)
 - [Jupyter Notebook документация](https://jupyter-notebook.readthedocs.io/)
+
 
