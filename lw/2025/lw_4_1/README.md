@@ -419,6 +419,8 @@ docker compose down -v
 - PostgreSQL лучше подходит для сложных аналитических запросов с множественными JOIN
 - MongoDB более гибкая для работы с неструктурированными данными
 - Выбор СУБД зависит от конкретных требований проекта
+- 
+[Лабораторная работа 4.1. Сравнение подходов хранения больших данных](http://95.131.149.21/moodle/mod/assign/view.php?id=918)
 
 ## Дополнительные ресурсы
 
@@ -426,3 +428,4 @@ docker compose down -v
 - [Документация PostgreSQL](https://www.postgresql.org/docs/)
 - [Docker Compose документация](https://docs.docker.com/compose/)
 - [Jupyter Notebook документация](https://jupyter-notebook.readthedocs.io/)
+
